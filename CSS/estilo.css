@@ -1,0 +1,234 @@
+* { 
+    box-sizing: border-box;
+    font-family: 'Electrolize', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    background-color: #f8f8f8; 
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: black; 
+}
+
+nav {
+    width: 100%;
+    background-color: #00a9e0; 
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white; 
+    text-decoration: none;
+    flex: 1; 
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+}
+
+nav a:hover {
+    background-color: #007d8a; 
+    border-radius: 5px;
+}
+
+.video {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.video h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #cb0ac1; 
+}
+
+iframe {
+    max-width: 100%;
+    height: 440px; 
+    border: none;
+}
+
+#expositores {
+    padding: 20px 10px;
+    background-color: white; 
+}
+
+#expositores h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #cb0ac1; 
+}
+
+.expositor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.expositor {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.expositor:hover {
+    transform: translateY(-10px);
+}
+
+.expositor .foto img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.expositor:hover .foto img {
+    transform: scale(1.05);
+}
+
+.expositor .texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.expositor:hover .texto {
+    opacity: 1; 
+}
+
+.expositor h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #cb0ac1; 
+}
+
+.expositor h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white; 
+}
+
+.expositor p {
+    font-size: 16px;
+    color: whitesmoke; 
+}
+
+.expositor p::before {
+    content: "✨ ";
+} 
+
+#mapa {
+    padding: 20px 10px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#mapa h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #cb0ac1; 
+}
+
+#mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.boletos {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.boletos h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #cb0ac1; 
+}
+
+.boletos p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black; 
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #666; 
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #cb0ac1; 
+    color: white; 
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #a0008f; 
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333; 
+    color: white; 
+    font-size: 14px;
+}

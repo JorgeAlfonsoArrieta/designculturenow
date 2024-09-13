@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESIGN THE CULTURE</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="IMAGENES/LOGO.png" alt="Logo de Design the culture" height="200px">
+        </header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#expositores">Expositores</a>
+            <a href="#mapa">Ubicación</a>
+            <a href="#comprar-boletos">Boletos</a>
+        </nav>
+
+
+        <section id="inicio" class="video">
+            <h2>¡BIENVENIDO!</h2>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/9zyzuLVKYrA?si=DHlN5cBsxquDkD7V"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+
+        <section id="expositores">
+            <h2>Expositores</h2>
+            <div class="expositor-grid">
+                <div class="expositor">
+                    <div class="foto">
+                        <img src="IMAGENES/ERIK.png" height="350" alt="Imagen de Erik Adigard">
+                    </div>
+                    <div class="texto">
+                        <h3>ERIK ADIGARD</h3>
+                        <h4>JUEVES 12 DE SEPTIEMBRE - 6:00 p.m.</h4>
+                        <p>Fundador de McShane Adigard Design (M.A.D.) en 1989. Desde entonces, la firma ha creado
+                            sitios web, instalaciones multimedia y publicaciones impresas para clientes de todo el
+                            mundo, entre ellos la revista Wired.</p>
+                    </div>
+                </div>
+                <div class="expositor">
+                    <div class="foto">
+                        <img src="IMAGENES/JULIE.png" height="350" alt="Imagen de Julie Bargmann">
+                    </div>
+                    <div class="texto">
+                        <h3>JULIE BARGMANN</h3>
+                        <h4>MARTES 9 DE OCTUBRE - 7:30 p.m.</h4>
+                        <p>Julie Bargmann fundó D.I.R.T. Studio, una consultoría de paisajismo, en 1992. Entre sus
+                            proyectos recientes se incluyen el paisajismo del Museo de Arte Contemporáneo de
+                            Massachusetts en North Adams, así como el Riverside Park South y el Hudson River Park en la
+                            ciudad de Nueva York.</p>
+                    </div>
+                </div>
+                <div class="expositor">
+                    <div class="foto">
+                        <img src="IMAGENES/MICH.png" height="350" alt="Imagen de Michael Gabellini">
+                    </div>
+                    <div class="texto">
+                        <h3>MICHAEL GABELLINI</h3>
+                        <h4>MIERCOLES DE NOVIEMBRE - 6:00 P.M.</h4>
+                        <p>Graduado de la Escuela de Diseño de Rhode Island, trabajó para Kohn Pedersen Fox Associates
+                            antes de fundar su propia práctica en 1991. Sus proyectos recientes incluyen exposiciones
+                            para el Museo Guggenheim, la Galería Marian Goodman y el Consejo de Diseñadores de Moda de
+                            América.</p>
+                    </div>
+                </div>
+                <div class="expositor">
+                    <div class="foto">
+                        <img src="IMAGENES/REBECA.png" height="350" alt="Imagen de Rebecca Mendez">
+                    </div>
+                    <div class="texto">
+                        <h3>REBECCA MENDEZ</h3>
+                        <h4>JUEVES 4 DE DIECIEMBRE - 6:30 P.M.</h4>
+                        <p>Nacida y criada en la Ciudad de México y formada en el Art Center College of Design de
+                            Pasadena, ha diseñado publicaciones para el Getty Center, el Museo de Arte del Condado de
+                            Los Ángeles y el Museo Whitney de Arte Americano.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mapa">
+            <h2>Ubicación</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.9826413127303!2d-73.96044812425777!3d40.78439577138283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a2492a3fb1%3A0x2028546238b46dfa!2sMuseo%20Nacional%20de%20Dise%C3%B1o%20Cooper-Hewitt!5e0!3m2!1ses-419!2smx!4v1726201689049!5m2!1ses-419!2smx"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="comprar-boletos" class="boletos">
+            <h2>Compra de Boletos</h2>
+            <p>¡Aparta tu lugar! Compra tus boletos aquí.</p>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="tipo-boletos">Tipo de Boletos:</label>
+                    <select id="tipo-boletos" name="tipo-boletos" required>
+                        <option value="general">General</option>
+                        <option value="vip">VIP</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <button type="submit" class="btn-submit">Comprar Boletos</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>¡Búscanos en nuestras redes sociales con el #DesignCultureNow! </p>
+        </footer>
+    </main>
+</body>
+
+</html>
